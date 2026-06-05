@@ -15,13 +15,13 @@ export default function Home() {
       <div className="relative z-10 max-w-3xl w-full mx-auto">
 
         {/* Location tag */}
-        <p className="text-indigo-400 text-xs font-semibold tracking-widest uppercase mb-6">
+        <p className="text-emerald-400 text-xs font-semibold tracking-widest uppercase mb-6">
           Auckland, New Zealand
         </p>
 
         {/* Name */}
         <h1 className="text-5xl sm:text-7xl font-extrabold mb-4 leading-tight">
-          <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-emerald-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
             Turei Milner
           </span>
         </h1>
@@ -40,13 +40,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
             to="/projects"
-            className="px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-colors duration-150"
+            className="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg transition-colors duration-150"
           >
             View Work
           </Link>
           <Link
             to="/contact"
-            className="px-8 py-3 border border-slate-600 hover:border-indigo-400 text-slate-300 hover:text-indigo-400 font-semibold rounded-lg transition-colors duration-150"
+            className="px-8 py-3 border border-slate-600 hover:border-emerald-400 text-slate-300 hover:text-emerald-400 font-semibold rounded-lg transition-colors duration-150"
           >
             Contact
           </Link>

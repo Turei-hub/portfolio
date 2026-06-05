@@ -44,7 +44,7 @@ const outcomes = [
 ]
 
 const projectBadgeStyle = {
-  'Racket Up': 'border-indigo-700 bg-indigo-900/40 text-indigo-300',
+  'Racket Up': 'border-emerald-700 bg-emerald-900/40 text-emerald-300',
   'Zina App': 'border-emerald-700 bg-emerald-900/40 text-emerald-300',
   '2 Little Leashes': 'border-amber-700 bg-amber-900/40 text-amber-300',
 }
@@ -52,7 +52,7 @@ const projectBadgeStyle = {
 function AccordionItem({ lo, isOpen, onToggle }) {
   return (
     <div className={`border rounded-xl overflow-hidden transition-colors duration-150 ${
-      isOpen ? 'border-indigo-500/50' : 'border-slate-700'
+      isOpen ? 'border-emerald-500/50' : 'border-slate-700'
     }`}>
       {/* Header button */}
       <button
@@ -60,7 +60,7 @@ function AccordionItem({ lo, isOpen, onToggle }) {
         className="w-full flex items-start sm:items-center justify-between gap-4 px-6 py-5 text-left bg-slate-800 hover:bg-slate-700/50 transition-colors duration-150"
       >
         <div className="flex items-start sm:items-center gap-4">
-          <span className="text-indigo-400 font-mono font-bold text-sm shrink-0 mt-0.5 sm:mt-0">
+          <span className="text-emerald-400 font-mono font-bold text-sm shrink-0 mt-0.5 sm:mt-0">
             {lo.id}
           </span>
           <div>

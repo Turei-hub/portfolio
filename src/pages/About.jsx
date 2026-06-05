@@ -54,14 +54,14 @@ export default function About() {
 
       {/* Skills grid */}
       <div className="mb-20">
-        <h2 className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-6">
+        <h2 className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-6">
           Tech &amp; Skills
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {skills.map(skill => (
             <div
               key={skill}
-              className="bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-center text-sm font-mono text-slate-300 hover:border-indigo-500/50 transition-colors"
+              className="bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-center text-sm font-mono text-slate-300 hover:border-emerald-500/50 transition-colors"
             >
               {skill}
             </div>
@@ -71,7 +71,7 @@ export default function About() {
 
       {/* Timeline */}
       <div>
-        <h2 className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-8">
+        <h2 className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-8">
           Timeline
         </h2>
         <div className="relative">
@@ -82,11 +82,11 @@ export default function About() {
             {timeline.map((item, i) => (
               <div key={i} className="sm:pl-12 relative">
                 {/* Dot */}
-                <div className="hidden sm:flex absolute left-0 top-1 w-8 h-8 rounded-full bg-slate-900 border-2 border-indigo-500 items-center justify-center">
-                  <div className="w-2 h-2 rounded-full bg-indigo-400" />
+                <div className="hidden sm:flex absolute left-0 top-1 w-8 h-8 rounded-full bg-slate-900 border-2 border-emerald-500 items-center justify-center">
+                  <div className="w-2 h-2 rounded-full bg-emerald-400" />
                 </div>
 
-                <span className="text-xs font-mono text-indigo-400 uppercase tracking-wider">
+                <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider">
                   {item.period}
                 </span>
                 <h3 className="text-lg font-semibold text-slate-100 mt-1 mb-1.5">

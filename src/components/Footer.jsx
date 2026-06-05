@@ -5,7 +5,7 @@ export default function Footer() {
         © {new Date().getFullYear()} Turei Milner &middot; Auckland, NZ &middot;{' '}
         <a
           href="https://turei.dev"
-          className="hover:text-indigo-400 transition-colors"
+          className="hover:text-emerald-400 transition-colors"
         >
           turei.dev
         </a>

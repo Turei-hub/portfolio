@@ -37,7 +37,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `text-base font-medium transition-colors duration-150 ${
                   isActive
-                    ? 'text-indigo-400'
+                    ? 'text-emerald-400'
                     : 'text-slate-400 hover:text-slate-100'
                 }`
               }
@@ -77,7 +77,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `text-base font-medium transition-colors ${
                   isActive
-                    ? 'text-indigo-400'
+                    ? 'text-emerald-400'
                     : 'text-slate-400 hover:text-slate-100'
                 }`
               }

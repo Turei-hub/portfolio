@@ -21,7 +21,7 @@ function LinkedInIcon() {
 }
 
 const inputClass =
-  'w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors duration-150'
+  'w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors duration-150'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -56,7 +56,7 @@ export default function Contact() {
           <p className="text-slate-400 text-sm">I'll get back to you as soon as I can.</p>
           <button
             onClick={() => { setSubmitted(false); setForm({ name: '', email: '', message: '' }) }}
-            className="mt-6 text-indigo-400 text-sm hover:text-indigo-300 transition-colors"
+            className="mt-6 text-emerald-400 text-sm hover:text-emerald-300 transition-colors"
           >
             Send another message
           </button>
@@ -113,7 +113,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-colors duration-150"
+            className="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg transition-colors duration-150"
           >
             Send Message
           </button>

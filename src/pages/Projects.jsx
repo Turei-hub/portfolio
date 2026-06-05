@@ -6,7 +6,7 @@ const projects = [
     name: 'Racket Up',
     description:
       'A tennis academy management platform built for a real client. Handles court bookings, player management, and admin workflows — built during my Final Mission internship with a full product team.',
-    color: 'from-indigo-800 to-indigo-900',
+    color: 'from-emerald-800 to-emerald-900',
     image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
     github: '#',
@@ -62,7 +62,7 @@ const allTags = ['All', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'My
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition-colors duration-150">
+    <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col hover:border-emerald-500/50 transition-colors duration-150">
 
       {project.image ? (
         <img
@@ -100,14 +100,14 @@ function ProjectCard({ project }) {
         <div className="flex gap-3">
           <a
             href={project.github}
-            className="flex-1 text-center py-2 border border-slate-600 hover:border-indigo-400 text-slate-400 hover:text-indigo-400 text-sm rounded-lg transition-colors duration-150"
+            className="flex-1 text-center py-2 border border-slate-600 hover:border-emerald-400 text-slate-400 hover:text-emerald-400 text-sm rounded-lg transition-colors duration-150"
           >
             GitHub
           </a>
           {project.live && (
             <a
               href={project.live}
-              className="flex-1 text-center py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm rounded-lg transition-colors duration-150"
+              className="flex-1 text-center py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm rounded-lg transition-colors duration-150"
             >
               Live ↗
             </a>
@@ -143,7 +143,7 @@ export default function Projects() {
             onClick={() => setActiveFilter(tag)}
             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors duration-150 ${
               activeFilter === tag
-                ? 'bg-indigo-600 text-white'
+                ? 'bg-emerald-600 text-white'
                 : 'bg-slate-800 border border-slate-700 text-slate-400 hover:text-slate-100 hover:border-slate-500'
             }`}
           >
