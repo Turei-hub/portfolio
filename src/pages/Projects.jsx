@@ -123,7 +123,7 @@ export default function Projects() {
       className="min-h-screen"
       style={{
         backgroundImage: 'url(/projects.bg.png)',
-        backgroundSize: 'cover',
+        backgroundSize: '150%',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
       }}
