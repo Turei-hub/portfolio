@@ -28,7 +28,7 @@ From the bush to the browser — I'm a Full Stack Developer based in Auckland, N
 | **Jerrican Trust** | Non-profit web presence |
 | **2 Little Leashes** | Small business site |
 
-View all projects → [Live Portfolio](https://portfolio-turei-hub.vercel.app)
+View all projects → [Live Portfolio](https://portfolio-sigma-jade-62.vercel.app)
 
 ## Pages
 
@@ -53,7 +53,7 @@ npm run build
 
 ## Contact
 
-Open to work and collaboration — reach out via the [contact page](https://portfolio-turei-hub.vercel.app/contact).
+Open to work and collaboration — reach out via the [contact page](https://portfolio-sigma-jade-62.vercel.app/contact).
 
 ---
 
