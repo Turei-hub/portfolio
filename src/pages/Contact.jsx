@@ -152,7 +152,7 @@ export default function Contact() {
       {/* Social links */}
       <div ref={socials.ref} className={`flex items-center justify-center gap-8 pt-4 border-t border-slate-800 transition-all duration-700 delay-200 ${socials.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <a
-          href="https://github.com/"
+          href="https://github.com/Turei-hub"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-slate-400 hover:text-slate-100 transition-colors"
@@ -161,7 +161,7 @@ export default function Contact() {
           <span className="text-sm">GitHub</span>
         </a>
         <a
-          href="https://linkedin.com/in/"
+          href="https://www.linkedin.com/in/turei-milner-2682b5361/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-slate-400 hover:text-slate-100 transition-colors"

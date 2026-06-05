@@ -11,19 +11,19 @@ const timeline = [
     period: '2022 – 2023',
     title: 'Before the Bootcamp',
     description:
-      'Placeholder — prior work experience, life background, the moment you decided to pivot into tech. What drove you here?',
+      'Years working with my hands — felling trees, building structures, navigating the bush. That world taught me precision, problem-solving under pressure, and how to see a job through. The pivot into tech wasn\'t accidental. I wanted to build something lasting, and I realised the same instincts that made me good in the trades would make me good in code.',
   },
   {
     period: '2024',
     title: 'Mission Ready HQ',
     description:
-      'Placeholder — describe the bootcamp, the intensity, the skills you built, and the people around you. What changed in your thinking?',
+      'Enrolled at Mission Ready HQ and discovered that coding scratches the same itch as construction — you design it, you build it, you ship it. The biggest shift was learning to start before I understood everything, get feedback fast, and iterate. The intensity was real, the community was real, and the skills I built here are the foundation of everything I\'ve shipped since.',
   },
   {
     period: '2025',
     title: 'Building Real Things',
     description:
-      'Placeholder — Racket Up, Zina App, 2 Little Leashes. Real problems, real users, real code. What are you most proud of?',
+      'Shipped four production projects — Racket Up (internship, live at racketup.co.nz), Zina App (AI road trip planner for Z Energy), 2 Little Leashes (full client platform, live in Rotorua), and Jerrican Trust (community web platform). Real clients, real deadlines, real code. I\'m most proud of building things that people actually use.',
   },
 ]
 
