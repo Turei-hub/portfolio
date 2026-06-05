@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import useScrollReveal from '../hooks/useScrollReveal'
 
 const outcomes = [
   {
@@ -106,6 +107,9 @@ function AccordionItem({ lo, isOpen, onToggle }) {
 
 export default function LearningOutcomes() {
   const [openId, setOpenId] = useState('LO1')
+  const header  = useScrollReveal()
+  const legend  = useScrollReveal()
+  const accordion = useScrollReveal()
 
   return (
     <div
@@ -121,7 +125,7 @@ export default function LearningOutcomes() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
-      <div className="mb-12">
+      <div ref={header.ref} className={`mb-12 transition-all duration-700 ${header.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h1 className="text-4xl font-bold mb-3">Learning Outcomes</h1>
         <p className="text-slate-400 leading-relaxed max-w-2xl">
           Each outcome maps to real projects built during Mission Ready HQ.
@@ -130,7 +134,7 @@ export default function LearningOutcomes() {
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div ref={legend.ref} className={`flex flex-wrap gap-3 mb-8 transition-all duration-700 delay-100 ${legend.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         {['Racket Up', 'Zina App', '2 Little Leashes'].map(proj => (
           <span
             key={proj}
@@ -143,7 +147,7 @@ export default function LearningOutcomes() {
       </div>
 
       {/* Accordion */}
-      <div className="space-y-3">
+      <div ref={accordion.ref} className={`space-y-3 transition-all duration-700 delay-200 ${accordion.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         {outcomes.map(lo => (
           <AccordionItem
             key={lo.id}

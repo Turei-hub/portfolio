@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import useScrollReveal from '../hooks/useScrollReveal'
 
 function GitHubIcon() {
   return (
@@ -27,6 +28,9 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)
+  const header  = useScrollReveal()
+  const formEl  = useScrollReveal()
+  const socials = useScrollReveal()
 
   const handleChange = e =>
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -60,11 +64,12 @@ export default function Contact() {
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
-      <div className="mb-10">
+      <div ref={header.ref} className={`mb-10 transition-all duration-700 ${header.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h1 className="text-4xl font-bold mb-2">Contact</h1>
         <p className="text-slate-400">Have a project in mind or want to connect? Let's talk.</p>
       </div>
 
+      <div ref={formEl.ref} className={`transition-all duration-700 delay-100 ${formEl.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       {submitted ? (
         <div className="bg-slate-800 border border-emerald-700/50 rounded-xl px-6 py-10 text-center">
           <div className="w-12 h-12 rounded-full bg-emerald-900/40 border border-emerald-700 flex items-center justify-center mx-auto mb-4">
@@ -143,8 +148,9 @@ export default function Contact() {
         </form>
       )}
 
+      </div>
       {/* Social links */}
-      <div className="flex items-center justify-center gap-8 pt-4 border-t border-slate-800">
+      <div ref={socials.ref} className={`flex items-center justify-center gap-8 pt-4 border-t border-slate-800 transition-all duration-700 delay-200 ${socials.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <a
           href="https://github.com/"
           target="_blank"
