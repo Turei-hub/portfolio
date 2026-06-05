@@ -108,6 +108,16 @@ export default function LearningOutcomes() {
   const [openId, setOpenId] = useState('LO1')
 
   return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: 'url(/learning.bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="min-h-screen bg-[#0b1a17]/80">
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
@@ -143,6 +153,8 @@ export default function LearningOutcomes() {
           />
         ))}
       </div>
+    </div>
+    </div>
     </div>
   )
 }
