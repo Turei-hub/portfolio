@@ -30,7 +30,7 @@ const projects = [
       'A real client needed a professional online presence — fast. Built a full booking system, admin dashboard, and photo approval workflow. Live and taking bookings in Rotorua.',
     color: 'from-amber-800 to-amber-900',
     image: '/2littleleashes.png',
-    tags: ['Next.js', 'Node.js', 'Supabase'],
+    tags: ['React', 'Vite', 'Node.js', 'Supabase'],
     github: 'https://github.com/Turei-hub/2littleleashes',
     live: 'https://www.2littleleashes.co.nz',
   },

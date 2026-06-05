@@ -20,11 +20,7 @@ export default function Navbar() {
 
         {/* Logo — navigates home */}
         <button onClick={() => navigate('/')} className="flex items-center cursor-pointer">
-          <img
-            src="/TheBroToots Logo1.png"
-            alt="Turei Milner logo"
-            className="h-14 w-auto"
-          />
+          <span className="text-2xl font-bold tracking-tight text-emerald-400">TM</span>
         </button>
 
         {/* Desktop nav */}
