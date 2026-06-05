@@ -43,17 +43,6 @@ const projects = [
     github: 'https://github.com/Turei-hub/jerrican-trust',
     live: 'https://jerrican-trust.vercel.app/',
   },
-  {
-    id: 5,
-    name: 'Tootstech',
-    description:
-      'A tech platform project showcasing full-stack development skills across a real-world brief.',
-    color: 'from-sky-800 to-sky-900',
-    image: '/tootstech.jpg',
-    tags: ['React', 'Node.js'],
-    github: '#',
-    live: '#',
-  },
 ]
 
 
@@ -167,19 +156,10 @@ export default function Projects() {
 
       {/* Cards grid */}
       {filtered.length > 0 ? (
-        <div className="space-y-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.slice(0, 3).map(project => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-          {filtered.length > 3 && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:w-2/3 lg:mx-auto">
-              {filtered.slice(3).map(project => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {filtered.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
       ) : (
         <p className="text-slate-500 text-center py-16">
