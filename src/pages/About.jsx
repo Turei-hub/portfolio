@@ -28,39 +28,27 @@ const timeline = [
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold mb-12">About</h1>
-
-      {/* Bio + photo placeholder */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
-        <div>
-          <h2 className="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-5">
-            Who I Am
-          </h2>
-          <div className="space-y-4 text-slate-400 leading-relaxed">
-            <p>
-              [ Bio paragraph one — who you are, where you come from, what grounds you.
-              Write in your own voice. ]
-            </p>
-            <p>
-              [ Bio paragraph two — your path into tech, why Mission Ready, what clicked
-              when you started building things. ]
-            </p>
-            <p>
-              [ Bio paragraph three — where you're headed, what kind of developer you
-              want to be, what you care about building. ]
-            </p>
-          </div>
+      {/* Bio + photo */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch mb-20">
+        <div className="flex flex-col justify-center space-y-4 text-slate-400 leading-relaxed">
+          <h1 className="text-4xl font-bold text-slate-100 mb-2">About</h1>
+          <p>
+            Ko Turei Milner tōku ingoa. I grew up in a small village, spent years working with my hands — felling trees, building structures, navigating the bush. That world taught me how to problem-solve under pressure, work with precision, and see a job through. Those same instincts are what I bring into tech every single day.
+          </p>
+          <p>
+            The switch into software wasn't accidental — it was a deliberate move to build something lasting. I enrolled at Mission Ready HQ and discovered that coding scratches the same itch as construction: you design something, you build it, you ship it. What clicked for me was realising I could create tools that actually serve communities — especially my own.
+          </p>
+          <p>
+            I'm building toward a career where technical skill meets cultural purpose. Whether that's platforms that centre Māori data sovereignty, wellness tools for veterans, or clean full-stack products for real clients — I want to build things that matter. I'm a father, and everything I'm doing in tech is part of the legacy I'm leaving for my sons.
+          </p>
         </div>
 
-        {/* Photo placeholder */}
-        <div className="bg-slate-800 border border-slate-700 rounded-xl h-72 md:h-auto flex flex-col items-center justify-center gap-2">
-          <div className="w-16 h-16 rounded-full bg-slate-700 border-2 border-indigo-500/40 flex items-center justify-center">
-            <svg className="w-8 h-8 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-          </div>
-          <span className="text-slate-500 text-sm">Photo placeholder</span>
+        <div className="rounded-xl overflow-hidden min-h-80">
+          <img
+            src="/tootstech.jpg"
+            alt="Turei Milner"
+            className="w-full h-full object-cover object-top"
+          />
         </div>
       </div>
 

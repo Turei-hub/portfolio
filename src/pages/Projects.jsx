@@ -27,7 +27,30 @@ const projects = [
     description:
       'Placeholder — describe the problem 2 Little Leashes solves, who it is for, and the key features.',
     color: 'from-amber-800 to-amber-900',
+    image: '/2littleleashes.png',
     tags: ['React', 'Node.js', 'MongoDB'],
+    github: '#',
+    live: '#',
+  },
+  {
+    id: 4,
+    name: 'Jerrican Trust',
+    description:
+      'Placeholder — describe the problem Jerrican Trust solves, who it is for, and the key features.',
+    color: 'from-rose-800 to-rose-900',
+    image: '/Jerrican Trust.png',
+    tags: ['React', 'Node.js'],
+    github: '#',
+    live: '#',
+  },
+  {
+    id: 5,
+    name: 'Tootstech',
+    description:
+      'Placeholder — describe the problem Tootstech solves, who it is for, and the key features.',
+    color: 'from-sky-800 to-sky-900',
+    image: '/tootstech.jpg',
+    tags: ['React', 'Node.js'],
     github: '#',
     live: '#',
   },
@@ -39,12 +62,19 @@ function ProjectCard({ project }) {
   return (
     <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col hover:border-indigo-500/50 transition-colors duration-150">
 
-      {/* Placeholder image */}
-      <div className={`bg-gradient-to-br ${project.color} h-48 flex items-center justify-center`}>
-        <span className="text-white/50 text-base font-semibold tracking-wide">
-          {project.name}
-        </span>
-      </div>
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={project.name}
+          className="h-48 w-full object-cover"
+        />
+      ) : (
+        <div className={`bg-gradient-to-br ${project.color} h-48 flex items-center justify-center`}>
+          <span className="text-white/50 text-base font-semibold tracking-wide">
+            {project.name}
+          </span>
+        </div>
+      )}
 
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-lg font-bold text-slate-100 mb-2">{project.name}</h3>
