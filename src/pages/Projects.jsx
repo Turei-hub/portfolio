@@ -7,6 +7,7 @@ const projects = [
     description:
       'Placeholder — describe the problem Racket Up solves, who it is for, and what makes it interesting.',
     color: 'from-indigo-800 to-indigo-900',
+    image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
     github: '#',
     live: '#',
@@ -17,6 +18,7 @@ const projects = [
     description:
       'Placeholder — describe the problem Zina App solves, who it is for, and the AI angle that makes it stand out.',
     color: 'from-emerald-800 to-emerald-900',
+    image: '/Zina.app.png',
     tags: ['React', 'AI', 'Python', 'FastAPI'],
     github: '#',
     live: '#',
@@ -55,6 +57,7 @@ const projects = [
     live: '#',
   },
 ]
+
 
 const allTags = ['All', 'React', 'Node.js', 'Express', 'MongoDB', 'AI', 'Python', 'FastAPI']
 

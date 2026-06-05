@@ -3,7 +3,7 @@
 ## Project overview
 Personal portfolio web app for Turei Milner, Full Stack Developer, Auckland NZ.
 Built with React + Vite + Tailwind + React Router. Static site, no backend.
-Deployed to Vercel.
+Deployed to Vercel at turei.dev.
 
 ## Purpose
 1. Showcase projects to sponsors and recruiters

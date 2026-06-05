@@ -7,8 +7,12 @@ const stackBadges = [
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 text-center">
-      <div className="max-w-3xl w-full mx-auto">
+    <section
+      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 text-center bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/Hero.section.png')" }}
+    >
+      <div className="absolute inset-0 bg-slate-900/70" />
+      <div className="relative z-10 max-w-3xl w-full mx-auto">
 
         {/* Location tag */}
         <p className="text-indigo-400 text-xs font-semibold tracking-widest uppercase mb-6">
@@ -29,8 +33,7 @@ export default function Home() {
 
         {/* Tagline */}
         <p className="text-slate-400 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-          [ Tagline placeholder — one punchy sentence about what you build,
-          who you build it for, and what drives you. ]
+          From the bush to the browser — building full-stack tools for real clients, real communities, and real impact.
         </p>
 
         {/* CTA buttons */}
@@ -63,5 +66,6 @@ export default function Home() {
 
       </div>
     </section>
+
   )
 }

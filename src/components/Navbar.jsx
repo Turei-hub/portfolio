@@ -11,16 +11,21 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [logoOpen, setLogoOpen] = useState(false)
 
   return (
+    <>
     <nav className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
 
-        {/* Logo */}
-        <Link to="/" className="font-bold text-xl tracking-tight">
-          <span className="text-indigo-400">TM</span>
-          <span className="text-slate-500">.</span>
-        </Link>
+        {/* Logo — click to preview, not navigate */}
+        <button onClick={() => setLogoOpen(true)} className="flex items-center cursor-pointer">
+          <img
+            src="/TheBroToots Logo1.png"
+            alt="Turei Milner logo"
+            className="h-14 w-auto"
+          />
+        </button>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
@@ -30,7 +35,7 @@ export default function Navbar() {
               to={link.to}
               end={link.end}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors duration-150 ${
+                `text-base font-medium transition-colors duration-150 ${
                   isActive
                     ? 'text-indigo-400'
                     : 'text-slate-400 hover:text-slate-100'
@@ -70,7 +75,7 @@ export default function Navbar() {
               end={link.end}
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors ${
+                `text-base font-medium transition-colors ${
                   isActive
                     ? 'text-indigo-400'
                     : 'text-slate-400 hover:text-slate-100'
@@ -83,5 +88,29 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+
+    {/* Logo lightbox */}
+    {logoOpen && (
+      <div
+        className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
+        onClick={() => setLogoOpen(false)}
+      >
+        <div className="relative max-w-lg w-full" onClick={e => e.stopPropagation()}>
+          <img
+            src="/TheBroToots Logo1.png"
+            alt="Turei Milner logo"
+            className="w-full h-auto rounded-xl shadow-2xl"
+          />
+          <button
+            onClick={() => setLogoOpen(false)}
+            className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors"
+            aria-label="Close"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    )}
+    </>
   )
 }
