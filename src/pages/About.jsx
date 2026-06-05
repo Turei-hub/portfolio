@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
+import useMeta from '../hooks/useMeta'
 
 const skills = [
   'JavaScript', 'TypeScript', 'React', 'Node.js',
@@ -41,7 +41,11 @@ const timeline = [
 ]
 
 export default function About() {
-  useEffect(() => { document.title = 'About — Turei Milner' }, [])
+  useMeta({
+    title: 'About — Turei Milner',
+    description: 'From the bush to the browser. Turei Milner is a Full Stack Developer from Auckland, NZ — trades background, Mission Ready graduate, building tools for real communities.',
+    path: '/about',
+  })
   const bio        = useScrollReveal()
   const skillsEl   = useScrollReveal()
   const timelineEl = useScrollReveal()

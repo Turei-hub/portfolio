@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
+import useMeta from '../hooks/useMeta'
 
 function GitHubIcon() {
   return (
@@ -25,7 +26,11 @@ const inputClass =
   'w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors duration-150'
 
 export default function Contact() {
-  useEffect(() => { document.title = 'Contact — Turei Milner' }, [])
+  useMeta({
+    title: 'Contact — Turei Milner',
+    description: 'Get in touch with Turei Milner — Full Stack Developer based in Auckland, NZ. Available for roles, freelance projects, and collaborations.',
+    path: '/contact',
+  })
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)

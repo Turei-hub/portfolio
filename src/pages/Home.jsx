@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
+import useMeta from '../hooks/useMeta'
 
 const stackBadges = [
   'React', 'Node.js', 'JavaScript', 'Python',
@@ -8,7 +8,11 @@ const stackBadges = [
 ]
 
 export default function Home() {
-  useEffect(() => { document.title = 'Turei Milner — Full Stack Developer | Auckland, NZ' }, [])
+  useMeta({
+    title: 'Turei Milner — Full Stack Developer | Auckland, NZ',
+    description: 'Turei Milner is a Full Stack Developer based in Auckland, NZ. Trades-to-tech story. Building real products with React, Node.js, and Supabase.',
+    path: '/',
+  })
   const hero = useScrollReveal()
   return (
     <section
