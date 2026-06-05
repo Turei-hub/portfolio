@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
 
         {/* Logo — navigates home */}
-        <button onClick={() => navigate('/')} className="flex items-center cursor-pointer ml-12">
+        <button onClick={() => navigate('/')} className="flex items-center cursor-pointer ml-20">
           <span className="text-2xl font-bold tracking-tight text-emerald-400">TM</span>
         </button>
 
