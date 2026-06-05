@@ -115,6 +115,21 @@ JERRICAN TRUST
 - Hero CTA: "Hire Me" is primary button (emerald glow pulse), "View My Work" is secondary
 - Active nav link: emerald underline on desktop, left border on mobile
 - vercel.json rewrite rule added — fixes 404 on direct URL / page refresh
+- Favicon set to TheBroToots Logo1.png
+- Unique document.title set on every page via useEffect
+- Image optimisation via vite-plugin-image-optimizer (68% reduction, runs on every build)
+- Accessibility: skip-to-content link, aria-labels on all interactive elements,
+  aria-expanded on LO accordion, marquee marked aria-hidden
+
+## Mission Ready journey (for timeline accuracy)
+- Level 3 — 10 weeks, Tech Career Launchpad
+- Level 4 — 10 weeks, Learning to Code (start of 32-week diploma)
+- Level 5 — 10 weeks, Missions (insurance chatbot, Zina App, 2 Little Leashes, Jerrican Trust)
+- Level 6 — 10 weeks, Final Mission internship — Racket Up (currently week 7)
+
+## Social links
+- GitHub: https://github.com/Turei-hub
+- LinkedIn: https://www.linkedin.com/in/turei-milner-2682b5361/
 
 ## Contact form
 - Wired to Formspree: https://formspree.io/f/mbdelqpe
