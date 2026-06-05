@@ -127,6 +127,16 @@ export default function Projects() {
       : projects.filter(p => p.tags.includes(activeFilter))
 
   return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: 'url(/projects.bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="min-h-screen bg-[#0b1a17]/80">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
@@ -173,6 +183,8 @@ export default function Projects() {
           No projects match this filter yet.
         </p>
       )}
+    </div>
+    </div>
     </div>
   )
 }
