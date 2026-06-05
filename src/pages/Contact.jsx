@@ -37,6 +37,16 @@ export default function Contact() {
   }
 
   return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: 'url(/contact.bg.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="min-h-screen bg-[#0b1a17]/80">
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
@@ -142,6 +152,8 @@ export default function Contact() {
         </a>
       </div>
 
+    </div>
+    </div>
     </div>
   )
 }
