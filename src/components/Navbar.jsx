@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
     <nav className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center h-20 gap-12">
 
         {/* Logo — navigates home */}
         <button onClick={() => navigate('/')} className="flex items-center cursor-pointer">
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         {/* Mobile burger */}
         <button
-          className="md:hidden p-2 text-slate-400 hover:text-slate-100 transition-colors"
+          className="md:hidden ml-auto p-2 text-slate-400 hover:text-slate-100 transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
         >
