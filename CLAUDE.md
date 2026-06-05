@@ -37,10 +37,10 @@ public/          # Static assets — images served directly by Vite/Vercel
   2littleleashes.png
   Jerrican Trust.png
   RacketUp.png
-  TheBroToots Logo1.png
   Zina.app.png
   Hero.section.png
-  tootstech.jpg
+  og-image.jpg          # OG/social share image + About page photo (1080x939px)
+  favicon.svg           # TM initials, neon green (#39ff14) with glow, dark bg
   projects.bg.png       # Projects page background
   about.bg.png          # About page background
   learning.bg.jpg       # Learning Outcomes page background
@@ -74,7 +74,7 @@ RACKET UP (primary — internship/Final Mission)
 
 2 LITTLE LEASHES (personal client project — live)
 - Dog walking business platform built for client Meihana, Rotorua
-- Stack: Next.js + Node + Supabase + Vercel
+- Stack: React + Vite + Node + Supabase + Vercel
 - Features: booking system, admin dashboard, gallery with photo approval
   workflow, dual transactional email notifications (client + admin)
 - Status: LIVE at www.2littleleashes.co.nz
@@ -115,7 +115,8 @@ JERRICAN TRUST
 - Hero CTA: "Hire Me" is primary button (emerald glow pulse), "View My Work" is secondary
 - Active nav link: emerald underline on desktop, left border on mobile
 - vercel.json rewrite rule added — fixes 404 on direct URL / page refresh
-- Favicon set to TheBroToots Logo1.png
+- Favicon: SVG with TM initials, neon green (#39ff14) with glow, dark background (public/favicon.svg)
+- Navbar logo: text-based "TM" in neon green (#39ff14) with CSS text-shadow glow — no image
 - Unique document.title set on every page via useEffect
 - Image optimisation via vite-plugin-image-optimizer (68% reduction, runs on every build)
 - Accessibility: skip-to-content link, aria-labels on all interactive elements,
@@ -140,6 +141,9 @@ JERRICAN TRUST
 - Meta description, Open Graph, Twitter Card all set in index.html
 - Google Search Console verified for turei.dev (HTML file method)
 - Sitemap submitted to Google Search Console
+- OG image verified working via Facebook Sharing Debugger (developers.facebook.com/tools/debug)
+- og:image → https://turei.dev/og-image.jpg (1080x939px — works, recommended is 1200x630px)
+- To improve: replace og-image.jpg with a 1200x630px crop for sharper LinkedIn/Facebook previews
 
 ## Dev preferences
 - PowerShell compatible commands only
