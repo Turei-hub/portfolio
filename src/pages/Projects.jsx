@@ -48,7 +48,7 @@ const projects = [
 ]
 
 
-const allTags = ['All', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'AI']
+const allTags = ['All', 'React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'AI']
 
 function ProjectCard({ project, index }) {
   const { ref, visible } = useScrollReveal()
