@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import useScrollReveal from '../hooks/useScrollReveal'
 
 const stackBadges = [
   'React', 'Node.js', 'JavaScript', 'Python',
@@ -6,13 +7,14 @@ const stackBadges = [
 ]
 
 export default function Home() {
+  const hero = useScrollReveal()
   return (
     <section
       className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 text-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/Hero.section.png')" }}
     >
       <div className="absolute inset-0 bg-slate-900/70" />
-      <div className="relative z-10 max-w-3xl w-full mx-auto">
+      <div ref={hero.ref} className={`relative z-10 max-w-3xl w-full mx-auto transition-all duration-1000 ${hero.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
 
         {/* Location tag */}
         <p className="text-emerald-400 text-xs font-semibold tracking-widest uppercase mb-6">
@@ -39,16 +41,16 @@ export default function Home() {
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link
-            to="/projects"
-            className="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg transition-colors duration-150"
+            to="/contact"
+            className="px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold rounded-lg transition-colors duration-150 animate-pulse-slow shadow-lg shadow-emerald-600/40"
           >
-            View Work
+            Hire Me
           </Link>
           <Link
-            to="/contact"
+            to="/projects"
             className="px-8 py-3 border border-slate-600 hover:border-emerald-400 text-slate-300 hover:text-emerald-400 font-semibold rounded-lg transition-colors duration-150"
           >
-            Contact
+            View My Work
           </Link>
         </div>
 

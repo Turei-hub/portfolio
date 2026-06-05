@@ -1,11 +1,12 @@
 import { useState } from 'react'
+import useScrollReveal from '../hooks/useScrollReveal'
 
 const projects = [
   {
     id: 1,
     name: 'Racket Up',
     description:
-      'A tennis academy management platform built for a real client. Handles court bookings, player management, and admin workflows — built during my Final Mission internship with a full product team.',
+      'Real client, real deadline. Built a full court booking and player management platform for a tennis academy during my Final Mission internship — shipped with a live product team.',
     color: 'from-emerald-800 to-emerald-900',
     image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
@@ -15,7 +16,7 @@ const projects = [
     id: 2,
     name: 'Zina App',
     description:
-      'An AI-powered road trip planner built for Z Energy. Users describe their trip and the app generates personalised routes and recommendations using the Gemini API and Google Maps. Built as part of a team show-and-tell.',
+      'Built for Z Energy — users describe a road trip and the app generates personalised routes using Gemini AI and Google Maps. Delivered as a team at Show & Tell.',
     color: 'from-emerald-800 to-emerald-900',
     image: '/Zina.app.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
@@ -25,7 +26,7 @@ const projects = [
     id: 3,
     name: '2 Little Leashes',
     description:
-      'A full dog walking business platform built for a real client in Rotorua. Features online booking, an admin dashboard, a gallery with photo approval workflow, and dual email notifications for clients and admin.',
+      'A real client needed a professional online presence — fast. Built a full booking system, admin dashboard, and photo approval workflow. Live and taking bookings in Rotorua.',
     color: 'from-amber-800 to-amber-900',
     image: '/2littleleashes.png',
     tags: ['Next.js', 'Node.js', 'Supabase'],
@@ -36,7 +37,7 @@ const projects = [
     id: 4,
     name: 'Jerrican Trust',
     description:
-      'A web platform built for the Jerrican Trust — supporting their mission and connecting the community with their work.',
+      'Designed and built a web platform for a community trust — giving them a professional digital home to share their mission and connect with supporters.',
     color: 'from-rose-800 to-rose-900',
     image: '/Jerrican Trust.png',
     tags: ['React', 'Node.js'],
@@ -48,9 +49,14 @@ const projects = [
 
 const allTags = ['All', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'AI']
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index }) {
+  const { ref, visible } = useScrollReveal()
   return (
-    <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col hover:border-emerald-500/50 transition-colors duration-150">
+    <div
+      ref={ref}
+      className={`bg-slate-800 border border-slate-700 rounded-xl overflow-hidden flex flex-col hover:border-emerald-500/50 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
 
       {project.image ? (
         <img
@@ -112,6 +118,8 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All')
+  const header = useScrollReveal()
+  const filters = useScrollReveal()
 
   const filtered =
     activeFilter === 'All'
@@ -132,13 +140,13 @@ export default function Projects() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
-      <div className="mb-10">
+      <div ref={header.ref} className={`mb-10 transition-all duration-700 ${header.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h1 className="text-4xl font-bold mb-2">Projects</h1>
         <p className="text-slate-400">A selection of things I've built.</p>
       </div>
 
       {/* Filter buttons */}
-      <div className="flex flex-wrap gap-2 mb-10">
+      <div ref={filters.ref} className={`flex flex-wrap gap-2 mb-10 transition-all duration-700 delay-100 ${filters.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         {allTags.map(tag => (
           <button
             key={tag}
@@ -157,8 +165,8 @@ export default function Projects() {
       {/* Cards grid */}
       {filtered.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {filtered.map(project => (
-            <ProjectCard key={project.id} project={project} />
+          {filtered.map((project, i) => (
+            <ProjectCard key={project.id} project={project} index={i} />
           ))}
         </div>
       ) : (

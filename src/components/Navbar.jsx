@@ -35,9 +35,9 @@ export default function Navbar() {
               to={link.to}
               end={link.end}
               className={({ isActive }) =>
-                `text-base font-medium transition-colors duration-150 ${
+                `text-base font-medium transition-colors duration-150 relative pb-1 ${
                   isActive
-                    ? 'text-emerald-400'
+                    ? 'text-emerald-400 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-emerald-400 after:rounded-full'
                     : 'text-slate-400 hover:text-slate-100'
                 }`
               }
@@ -75,10 +75,10 @@ export default function Navbar() {
               end={link.end}
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
-                `text-base font-medium transition-colors ${
+                `text-base font-medium transition-colors pl-2 border-l-2 ${
                   isActive
-                    ? 'text-emerald-400'
-                    : 'text-slate-400 hover:text-slate-100'
+                    ? 'text-emerald-400 border-emerald-400'
+                    : 'text-slate-400 hover:text-slate-100 border-transparent'
                 }`
               }
             >

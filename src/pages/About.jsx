@@ -1,3 +1,5 @@
+import useScrollReveal from '../hooks/useScrollReveal'
+
 const skills = [
   'JavaScript', 'TypeScript', 'React', 'Node.js',
   'Express', 'Python', 'MongoDB', 'PostgreSQL',
@@ -26,6 +28,10 @@ const timeline = [
 ]
 
 export default function About() {
+  const bio        = useScrollReveal()
+  const skillsEl   = useScrollReveal()
+  const timelineEl = useScrollReveal()
+
   return (
     <div
       className="min-h-screen"
@@ -39,7 +45,7 @@ export default function About() {
       <div className="min-h-screen bg-[#0b1a17]/80">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       {/* Bio + photo */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch mb-20">
+      <div ref={bio.ref} className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch mb-20 transition-all duration-700 ${bio.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="flex flex-col justify-center space-y-4 text-slate-400 leading-relaxed">
           <h1 className="text-4xl font-bold text-slate-100 mb-2">About</h1>
           <p>
@@ -63,7 +69,7 @@ export default function About() {
       </div>
 
       {/* Skills grid */}
-      <div className="mb-20">
+      <div ref={skillsEl.ref} className={`mb-20 transition-all duration-700 delay-100 ${skillsEl.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-6">
           Tech &amp; Skills
         </h2>
@@ -80,7 +86,7 @@ export default function About() {
       </div>
 
       {/* Timeline */}
-      <div>
+      <div ref={timelineEl.ref} className={`transition-all duration-700 delay-200 ${timelineEl.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-emerald-400 text-sm font-semibold uppercase tracking-widest mb-8">
           Timeline
         </h2>
