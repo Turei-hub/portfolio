@@ -6,7 +6,7 @@ const outcomes = [
     title: 'Full Stack Technical Capability',
     summary: 'Design and build a complete web application from front end to back end.',
     detail:
-      'Placeholder — expand on what this outcome means in practice. What evidence do your projects provide? What specific technologies, patterns, or decisions demonstrate your full stack capability?',
+      'Across three production projects I designed and shipped complete full-stack applications. For 2 Little Leashes I built the entire platform solo — a Next.js frontend, Node.js/Express API, and Supabase (PostgreSQL) database, deployed to Vercel with dual transactional email notifications and a photo approval workflow. For Racket Up I built REST API endpoints with Express and Sequelize on a MySQL database, integrating with a React frontend built alongside a product team. For Zina App I owned the ChatPage and BriefFormPage, integrated the Gemini AI API and Google Maps API, and connected the voice input feature end-to-end. In each case I handled data modelling, API design, state management, and deployment — not just isolated components.',
     projects: ['Racket Up', 'Zina App', '2 Little Leashes'],
   },
   {
@@ -14,7 +14,7 @@ const outcomes = [
     title: 'Agile Development Practices',
     summary: 'Apply iterative, user-centred Agile methods throughout a project lifecycle.',
     detail:
-      'Placeholder — describe your use of sprints, standups, Trello or Jira, retrospectives, and user stories. How did Agile shape the way you worked and what you shipped?',
+      'On Racket Up I worked within a real product team structure with a client (Ryan), a project manager (Frankie), a UX partner (Ain), and a developer peer (Joe). We ran sprints with a product backlog, held regular standups, and iterated based on client feedback in review sessions. Features were broken into user stories and prioritised collaboratively — nothing was built without a clear user need behind it. On Zina App the team used a shared GitHub repo with branch-based workflows, pull request reviews, and a Show & Tell delivery deadline that drove sprint planning. Both projects gave me direct experience of the gap between what a client asks for and what they actually need — and how Agile ceremonies create the space to close that gap.',
     projects: ['Racket Up', 'Zina App'],
   },
   {
@@ -22,7 +22,7 @@ const outcomes = [
     title: 'Security, Testing & Quality',
     summary: 'Write secure, tested, and maintainable code across front and back end.',
     detail:
-      'Placeholder — cover your approach to authentication, input validation, OWASP considerations, and which testing frameworks or strategies you used. What does quality mean to you in practice?',
+      'For Zina App I wrote 28 Jest unit tests covering the core AI and form logic — the most rigorous test suite I\'ve built to date. For 2 Little Leashes I implemented environment variable management for Supabase keys and email credentials, keeping secrets out of the codebase entirely. Input validation runs on both the client and server side. I applied OWASP principles around authentication flows and protected admin routes with server-side checks rather than relying on client state alone. On Racket Up I used Sequelize as an ORM to prevent SQL injection at the data layer. Quality to me means code that a teammate can read without asking questions — I aim for clear naming, small focused functions, and no silent failures.',
     projects: ['Zina App', '2 Little Leashes'],
   },
   {
@@ -30,7 +30,7 @@ const outcomes = [
     title: 'Collaboration & Communication',
     summary: 'Work effectively in a team and communicate technical concepts to varied audiences.',
     detail:
-      'Placeholder — evidence of teamwork, Git collaboration, pair programming, presenting work to stakeholders, writing documentation, and explaining decisions clearly.',
+      'On Racket Up I held direct client meetings with Ryan to gather requirements, translate them into technical tasks, and report back on progress in plain language. I worked alongside Ain on UX decisions, bridging design intent and implementation constraints. Code collaboration ran through GitHub — branching, pull requests, and peer reviews were part of the daily workflow. For Zina App the team presented a full Show & Tell to Z Energy stakeholders in April 2026, where I explained the AI integration and demo\'d the voice input feature live. For 2 Little Leashes I managed the entire client relationship with Meihana — scoping requirements, communicating timelines, and training her on the admin dashboard after launch. Communicating across technical and non-technical audiences is something I\'ve had to do consistently across every project.',
     projects: ['Racket Up'],
   },
   {
@@ -38,7 +38,7 @@ const outcomes = [
     title: 'Professional Reflection & Growth',
     summary: 'Reflect critically on your own learning journey and professional development.',
     detail:
-      'Placeholder — where did you start? What shifted in your thinking? What are you still working on? This is your most personal outcome — make it honest and specific.',
+      'I came into this programme from a trades background — felling trees, building structures, working with my hands in the bush. The instincts are the same: read the situation, make a plan, execute with precision, and own the result. What changed at Mission Ready was the speed. I had to get comfortable being wrong quickly, adjusting, and shipping anyway. The biggest shift in my thinking was moving from "I need to understand everything before I start" to "start, get feedback, understand through doing." I\'m still working on depth in system design and database optimisation. But I\'ve shipped real products for real clients, and I\'ve done it as part of teams and solo. I\'m building toward a career where technical skill meets cultural purpose — tools that serve Māori communities, veterans, and the people around me. Everything I\'m doing in tech is part of the legacy I\'m leaving for my sons.',
     projects: ['Racket Up', 'Zina App', '2 Little Leashes'],
   },
 ]
