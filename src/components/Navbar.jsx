@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Logo — navigates home */}
         <button onClick={() => navigate('/')} className="flex items-center cursor-pointer ml-20">
-          <span className="text-2xl font-bold tracking-tight text-emerald-400">TM</span>
+          <span className="text-2xl font-bold tracking-tight" style={{ color: '#39ff14', textShadow: '0 0 8px #39ff14, 0 0 16px #39ff14' }}>TM</span>
         </button>
 
         {/* Desktop nav */}
