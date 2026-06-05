@@ -9,7 +9,7 @@ const projects = [
     color: 'from-emerald-800 to-emerald-900',
     image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
-    live: '#',
+    live: 'https://racketup.co.nz/',
   },
   {
     id: 2,
