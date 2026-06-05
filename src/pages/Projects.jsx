@@ -5,10 +5,10 @@ const projects = [
     id: 1,
     name: 'Racket Up',
     description:
-      'Placeholder — describe the problem Racket Up solves, who it is for, and what makes it interesting.',
+      'A tennis academy management platform built for a real client. Handles court bookings, player management, and admin workflows — built during my Final Mission internship with a full product team.',
     color: 'from-indigo-800 to-indigo-900',
     image: '/RacketUp.png',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+    tags: ['React', 'Node.js', 'Express', 'MySQL'],
     github: '#',
     live: '#',
   },
@@ -16,29 +16,28 @@ const projects = [
     id: 2,
     name: 'Zina App',
     description:
-      'Placeholder — describe the problem Zina App solves, who it is for, and the AI angle that makes it stand out.',
+      'An AI-powered road trip planner built for Z Energy. Users describe their trip and the app generates personalised routes and recommendations using the Gemini API and Google Maps. Built as part of a team show-and-tell.',
     color: 'from-emerald-800 to-emerald-900',
     image: '/Zina.app.png',
-    tags: ['React', 'AI', 'Python', 'FastAPI'],
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
     github: '#',
-    live: '#',
   },
   {
     id: 3,
     name: '2 Little Leashes',
     description:
-      'Placeholder — describe the problem 2 Little Leashes solves, who it is for, and the key features.',
+      'A full dog walking business platform built for a real client in Rotorua. Features online booking, an admin dashboard, a gallery with photo approval workflow, and dual email notifications for clients and admin.',
     color: 'from-amber-800 to-amber-900',
     image: '/2littleleashes.png',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    tags: ['Next.js', 'Node.js', 'Supabase'],
     github: '#',
-    live: '#',
+    live: 'https://www.2littleleashes.co.nz',
   },
   {
     id: 4,
     name: 'Jerrican Trust',
     description:
-      'Placeholder — describe the problem Jerrican Trust solves, who it is for, and the key features.',
+      'A web platform built for the Jerrican Trust — supporting their mission and connecting the community with their work.',
     color: 'from-rose-800 to-rose-900',
     image: '/Jerrican Trust.png',
     tags: ['React', 'Node.js'],
@@ -49,7 +48,7 @@ const projects = [
     id: 5,
     name: 'Tootstech',
     description:
-      'Placeholder — describe the problem Tootstech solves, who it is for, and the key features.',
+      'A tech platform project showcasing full-stack development skills across a real-world brief.',
     color: 'from-sky-800 to-sky-900',
     image: '/tootstech.jpg',
     tags: ['React', 'Node.js'],
@@ -59,7 +58,7 @@ const projects = [
 ]
 
 
-const allTags = ['All', 'React', 'Node.js', 'Express', 'MongoDB', 'AI', 'Python', 'FastAPI']
+const allTags = ['All', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'AI']
 
 function ProjectCard({ project }) {
   return (
@@ -105,12 +104,14 @@ function ProjectCard({ project }) {
           >
             GitHub
           </a>
-          <a
-            href={project.live}
-            className="flex-1 text-center py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm rounded-lg transition-colors duration-150"
-          >
-            Live ↗
-          </a>
+          {project.live && (
+            <a
+              href={project.live}
+              className="flex-1 text-center py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm rounded-lg transition-colors duration-150"
+            >
+              Live ↗
+            </a>
+          )}
         </div>
       </div>
     </div>
