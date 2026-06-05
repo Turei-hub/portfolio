@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const navLinks = [
   { to: '/', label: 'Home', end: true },
@@ -11,15 +11,15 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [logoOpen, setLogoOpen] = useState(false)
+  const navigate = useNavigate()
 
   return (
     <>
     <nav className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20">
 
-        {/* Logo — click to preview, not navigate */}
-        <button onClick={() => setLogoOpen(true)} className="flex items-center cursor-pointer">
+        {/* Logo — navigates home */}
+        <button onClick={() => navigate('/')} className="flex items-center cursor-pointer">
           <img
             src="/TheBroToots Logo1.png"
             alt="Turei Milner logo"
@@ -89,28 +89,6 @@ export default function Navbar() {
       )}
     </nav>
 
-    {/* Logo lightbox */}
-    {logoOpen && (
-      <div
-        className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
-        onClick={() => setLogoOpen(false)}
-      >
-        <div className="relative max-w-lg w-full" onClick={e => e.stopPropagation()}>
-          <img
-            src="/TheBroToots Logo1.png"
-            alt="Turei Milner logo"
-            className="w-full h-auto rounded-xl shadow-2xl"
-          />
-          <button
-            onClick={() => setLogoOpen(false)}
-            className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors"
-            aria-label="Close"
-          >
-            ✕
-          </button>
-        </div>
-      </div>
-    )}
-    </>
+</>
   )
 }
