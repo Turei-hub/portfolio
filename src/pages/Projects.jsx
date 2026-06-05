@@ -42,7 +42,7 @@ const projects = [
     image: '/Jerrican Trust.png',
     tags: ['React', 'Node.js'],
     github: '#',
-    live: '#',
+    live: 'https://jerrican-trust.vercel.app/',
   },
   {
     id: 5,
@@ -154,10 +154,19 @@ export default function Projects() {
 
       {/* Cards grid */}
       {filtered.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filtered.slice(0, 3).map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          {filtered.length > 3 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:w-2/3 lg:mx-auto">
+              {filtered.slice(3).map(project => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          )}
         </div>
       ) : (
         <p className="text-slate-500 text-center py-16">
