@@ -24,12 +24,23 @@ Turei works across three tools:
 - React Router
 - Vercel deployment
 
+## Git workflow
+- Always work on `dev` branch
+- Merge `dev` → `master` to trigger a Vercel production deploy
+- Vercel auto-deploys on every push to `master`
+
 ## Project structure
 src/
-  components/    # Reusable UI components
+  components/    # Reusable UI components (Navbar, Footer)
   pages/         # One file per route
-  assets/        # Images, icons
-  data/          # Project and LO data as JS objects
+public/          # Static assets — images served directly by Vite/Vercel
+  2littleleashes.png
+  Jerrican Trust.png
+  RacketUp.png
+  TheBroToots Logo1.png
+  Zina.app.png
+  Hero.section.png
+  tootstech.jpg
 
 ## Pages
 - /            → Hero/Home
@@ -50,9 +61,10 @@ RACKET UP (primary — internship/Final Mission)
 - Client: Ryan (academy owner), Frankie (PM), Joe
 - UX partner: Ain
 - Stack: Node/Express/MySQL/Sequelize + React/Vite
-- Status: In development, deploying in ~5 weeks
+- Status: In development
 - GitHub: [add link]
 - Live: [add when deployed]
+- Card: has image, no live button yet
 
 2 LITTLE LEASHES (personal client project — live)
 - Dog walking business platform built for client Meihana, Rotorua
@@ -61,18 +73,27 @@ RACKET UP (primary — internship/Final Mission)
   workflow, dual transactional email notifications (client + admin)
 - Status: LIVE at www.2littleleashes.co.nz
 - GitHub: [add link]
+- Card: has image and live button
 
-ZINA APP (team project — complete)
+ZINA APP (team project — complete, not publicly deployed)
 - AI-powered road trip planner built for Z Energy
 - Stack: React, Vite, Node.js, Express, MongoDB, Gemini API, Google Maps API
 - Turei's role: ChatPage, BriefFormPage, voice/AI integration, 28 Jest tests
 - Status: Complete, Show & Tell delivered April 2026
-- GitHub: [add link]
+- GitHub: [add link] — no live URL, GitHub button only
+- Card: has image, GitHub button only (no live button)
 
-TRADEMEAPP (coursework — complete)
-- Auction platform simulation
-- Stack: React/Vite + Node/Express/MongoDB
+JERRICAN TRUST
+- Web platform for the Jerrican Trust
+- Stack: React, Node.js
 - GitHub: [add link]
+- Card: has image, GitHub button only
+
+TOOTSTECH
+- Tech platform project
+- Stack: React, Node.js
+- GitHub: [add link]
+- Card: has image (also used as About page photo), GitHub button only
 
 ## Learning Outcomes (Final Mission evidence)
 LO1 — Industry best practices (product backlog, data modelling, REST APIs)
@@ -86,8 +107,9 @@ LO5 — Personal contribution + employability growth
 - Mobile first always
 - Tailwind utility classes only — no custom CSS unless absolutely necessary
 - One component per section/page — keep them clean and reusable
-- Placeholder divs for images until real assets are ready
 - No alert() — use state swaps for form success/error feedback
+- Live button on project cards is conditional — only renders when project.live is set
+- Navbar logo opens a lightbox modal on click (does not navigate)
 
 ## Dev preferences
 - PowerShell compatible commands only
