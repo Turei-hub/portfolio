@@ -31,6 +31,7 @@ Turei works across three tools:
 ## Project structure
 src/
   components/    # Reusable UI components (Navbar, Footer)
+  hooks/         # Custom hooks (useScrollReveal)
   pages/         # One file per route
 public/          # Static assets — images served directly by Vite/Vercel
   2littleleashes.png
@@ -105,6 +106,15 @@ JERRICAN TRUST
 - No alert() — use state swaps for form success/error feedback
 - Live button on project cards is conditional — only renders when project.live is set
 - GitHub button on project cards is conditional — only renders when project.github is set
+- Smooth scroll enabled globally via scroll-behavior: smooth in index.css
+
+## UI enhancements (June 2026)
+- Sticky neon green (#39ff14) marquee banner below navbar — continuous loop, 4 copies, translateX(-25%)
+  Slogan included: "From the Bush to the Browser"
+- Scroll reveal animations on all 5 pages using src/hooks/useScrollReveal.js (IntersectionObserver)
+- Hero CTA: "Hire Me" is primary button (emerald glow pulse), "View My Work" is secondary
+- Active nav link: emerald underline on desktop, left border on mobile
+- vercel.json rewrite rule added — fixes 404 on direct URL / page refresh
 
 ## Contact form
 - Wired to Formspree: https://formspree.io/f/mbdelqpe
