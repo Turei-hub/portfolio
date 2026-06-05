@@ -9,28 +9,34 @@ const skills = [
 
 const timeline = [
   {
-    period: '2022 – 2023',
-    title: 'Before the Bootcamp',
+    period: 'Before the Keyboard',
+    title: 'Trades & the Bush',
     description:
-      'Years working with my hands — felling trees, building structures, navigating the bush. That world taught me precision, problem-solving under pressure, and how to see a job through. The pivot into tech wasn\'t accidental. I wanted to build something lasting, and I realised the same instincts that made me good in the trades would make me good in code.',
+      'Years working with my hands — felling trees, building structures, navigating the bush. That world taught me precision, problem-solving under pressure, and how to see a job through. The pivot into tech wasn\'t accidental. Those same instincts are what I bring into code every single day.',
   },
   {
-    period: '2024',
-    title: 'Mission Ready HQ',
+    period: 'Level 3 — 10 Weeks',
+    title: 'Tech Career Launchpad',
     description:
-      'Enrolled at Mission Ready HQ and discovered that coding scratches the same itch as construction — you design it, you build it, you ship it. The biggest shift was learning to start before I understood everything, get feedback fast, and iterate. The intensity was real, the community was real, and the skills I built here are the foundation of everything I\'ve shipped since.',
+      'Started at Mission Ready HQ with the Tech Career Launchpad — 10 weeks that introduced the developer mindset, digital fundamentals, and what a career in tech actually looks like. This was the spark that confirmed I was making the right move.',
   },
   {
-    period: '2025',
-    title: 'Building Real Things',
+    period: 'Level 4 — 10 Weeks',
+    title: 'Learning to Code',
     description:
-      'Shipped four production projects — Racket Up (internship, live at racketup.co.nz), Zina App (AI road trip planner for Z Energy), 2 Little Leashes (full client platform, live in Rotorua), and Jerrican Trust (community web platform). Real clients, real deadlines, real code. I\'m most proud of building things that people actually use.',
+      'The first 10 weeks of the full 32-week diploma. Deep focus on programming fundamentals — logic, problem-solving, and writing real code from scratch. This phase built the foundation everything else sits on.',
   },
   {
-    period: '2026',
-    title: 'What\'s Next',
+    period: 'Level 5 — 10 Weeks',
+    title: 'Out on Missions',
     description:
-      'Completing the Level 5 Diploma at Mission Ready HQ and actively looking for my first full-time role in tech. Building toward a career where technical skill meets cultural purpose — tools that serve Māori communities, veterans, and the people around me. Open to work, open to conversation.',
+      'Deployed on real-world missions — built an AI chatbot for a car insurance policy guide, delivered the Zina App (AI road trip planner) for Z Energy, and shipped 2 Little Leashes and Jerrican Trust as personal client projects. Every mission had a real brief, a real client, and a real deadline.',
+  },
+  {
+    period: 'Level 6 — Week 7 of 10',
+    title: 'Final Mission — Internship',
+    description:
+      'Currently in week 7 of a 10-week internship building Racket Up — a tennis academy management platform for a real client. Working inside a live product team with a PM, UX partner, and fellow developer. This is the final phase of the diploma and the bridge into my first full-time role in tech.',
   },
 ]
 
