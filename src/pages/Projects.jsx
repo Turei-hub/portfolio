@@ -9,7 +9,6 @@ const projects = [
     color: 'from-emerald-800 to-emerald-900',
     image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
-    github: '#',
     live: '#',
   },
   {
@@ -20,7 +19,7 @@ const projects = [
     color: 'from-emerald-800 to-emerald-900',
     image: '/Zina.app.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
-    github: '#',
+    github: 'https://github.com/Turei-hub/zina-app',
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ const projects = [
     color: 'from-amber-800 to-amber-900',
     image: '/2littleleashes.png',
     tags: ['Next.js', 'Node.js', 'Supabase'],
-    github: '#',
+    github: 'https://github.com/Turei-hub/2littleleashes',
     live: 'https://www.2littleleashes.co.nz',
   },
   {
@@ -41,7 +40,7 @@ const projects = [
     color: 'from-rose-800 to-rose-900',
     image: '/Jerrican Trust.png',
     tags: ['React', 'Node.js'],
-    github: '#',
+    github: 'https://github.com/Turei-hub/jerrican-trust',
     live: 'https://jerrican-trust.vercel.app/',
   },
   {
@@ -98,12 +97,16 @@ function ProjectCard({ project }) {
 
         {/* Links */}
         <div className="flex gap-3">
+          {project.github && (
           <a
             href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-1 text-center py-2 border border-slate-600 hover:border-emerald-400 text-slate-400 hover:text-emerald-400 text-sm rounded-lg transition-colors duration-150"
           >
             GitHub
           </a>
+          )}
           {project.live && (
             <a
               href={project.live}
