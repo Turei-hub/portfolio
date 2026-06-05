@@ -25,8 +25,7 @@ Turei works across three tools:
 - Vercel deployment
 
 ## Git workflow
-- Always work on `dev` branch
-- Merge `dev` → `master` to trigger a Vercel production deploy
+- Always push directly to `master` to trigger a Vercel production deploy
 - Vercel auto-deploys on every push to `master`
 
 ## Project structure
@@ -41,13 +40,20 @@ public/          # Static assets — images served directly by Vite/Vercel
   Zina.app.png
   Hero.section.png
   tootstech.jpg
+  projects.bg.png       # Projects page background
+  about.bg.png          # About page background
+  learning.bg.jpg       # Learning Outcomes page background
+  contact.bg.jpg        # Contact page background
+  robots.txt            # SEO — allows all crawlers
+  sitemap.xml           # SEO — all 5 pages mapped
+  googlec4088f0423494cb8.html  # Google Search Console verification file
 
 ## Pages
 - /            → Hero/Home
-- /projects    → Project showcase cards
-- /about       → Bio, skills, timeline
-- /outcomes    → Learning Outcomes (LO1–LO5 mapped to projects)
-- /contact     → Contact form + links
+- /projects    → Project showcase cards (2x2 grid, background image)
+- /about       → Bio, skills, timeline (background image)
+- /outcomes    → Learning Outcomes LO1–LO5 accordion (background image)
+- /contact     → Contact form + social links (background image)
 
 ## Commands
 npm run dev       # start dev server (Vite, http://localhost:5173)
@@ -61,10 +67,9 @@ RACKET UP (primary — internship/Final Mission)
 - Client: Ryan (academy owner), Frankie (PM), Joe
 - UX partner: Ain
 - Stack: Node/Express/MySQL/Sequelize + React/Vite
-- Status: In development
-- GitHub: [add link]
-- Live: [add when deployed]
-- Card: has image, no live button yet
+- Status: LIVE at https://racketup.co.nz/
+- GitHub: none (button removed from card)
+- Card: Live button only
 
 2 LITTLE LEASHES (personal client project — live)
 - Dog walking business platform built for client Meihana, Rotorua
@@ -72,44 +77,44 @@ RACKET UP (primary — internship/Final Mission)
 - Features: booking system, admin dashboard, gallery with photo approval
   workflow, dual transactional email notifications (client + admin)
 - Status: LIVE at www.2littleleashes.co.nz
-- GitHub: [add link]
-- Card: has image and live button
+- GitHub: https://github.com/Turei-hub/2littleleashes
+- Card: GitHub + Live buttons
 
-ZINA APP (team project — complete, not publicly deployed)
+ZINA APP (team project — complete)
 - AI-powered road trip planner built for Z Energy
 - Stack: React, Vite, Node.js, Express, MongoDB, Gemini API, Google Maps API
 - Turei's role: ChatPage, BriefFormPage, voice/AI integration, 28 Jest tests
 - Status: Complete, Show & Tell delivered April 2026
-- GitHub: [add link] — no live URL, GitHub button only
-- Card: has image, GitHub button only (no live button)
+- GitHub: https://github.com/Turei-hub/zina-app
+- Card: GitHub button only (no live URL)
 
 JERRICAN TRUST
 - Web platform for the Jerrican Trust
 - Stack: React, Node.js
-- GitHub: [add link]
-- Card: has image, GitHub button only
+- GitHub: https://github.com/Turei-hub/jerrican-trust
+- Live: https://jerrican-trust.vercel.app/
+- Card: GitHub + Live buttons
 
-TOOTSTECH
-- Tech platform project
-- Stack: React, Node.js
-- GitHub: [add link]
-- Card: has image (also used as About page photo), GitHub button only
-
-## Learning Outcomes (Final Mission evidence)
-LO1 — Industry best practices (product backlog, data modelling, REST APIs)
-LO2 — Agile + design thinking (iterative dev, client meetings, UX collaboration)
-LO3 — Ethics (data privacy, accessibility, stakeholder impact)
-LO4 — Communication + collaboration (client meetings, mentor check-ins, PR reviews)
-LO5 — Personal contribution + employability growth
-
-## Design conventions
-- Dark theme default
-- Mobile first always
-- Tailwind utility classes only — no custom CSS unless absolutely necessary
-- One component per section/page — keep them clean and reusable
+## Theme & design
+- Base background: #0b1a17 (dark teal)
+- Accent colour: emerald (was indigo — updated June 2026)
+- Dot grid background pattern on all pages (index.css)
+- Emerald glow blobs fixed to left/right edges (index.css, pulse animation)
+- Each page has a unique fixed background image with #0b1a17/80 dark overlay
+- Dark theme, mobile first, Tailwind utility classes only
 - No alert() — use state swaps for form success/error feedback
 - Live button on project cards is conditional — only renders when project.live is set
-- Navbar logo opens a lightbox modal on click (does not navigate)
+- GitHub button on project cards is conditional — only renders when project.github is set
+
+## Contact form
+- Wired to Formspree: https://formspree.io/f/mbdelqpe
+- Sends to: milner.turei@gmail.com
+- Success/error state handled with React state (no page reload)
+
+## SEO
+- Meta description, Open Graph, Twitter Card all set in index.html
+- Google Search Console verified for turei.dev (HTML file method)
+- Sitemap submitted to Google Search Console
 
 ## Dev preferences
 - PowerShell compatible commands only
