@@ -26,14 +26,24 @@ const inputClass =
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
 
   const handleChange = e =>
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    // Placeholder — wire up to EmailJS, Formspree, or a backend endpoint
-    setSubmitted(true)
+    setError(false)
+    const res = await fetch('https://formspree.io/f/mbdelqpe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(form),
+    })
+    if (res.ok) {
+      setSubmitted(true)
+    } else {
+      setError(true)
+    }
   }
 
   return (
@@ -127,6 +137,9 @@ export default function Contact() {
           >
             Send Message
           </button>
+          {error && (
+            <p className="text-red-400 text-sm text-center">Something went wrong. Please try again.</p>
+          )}
         </form>
       )}
 
