@@ -155,6 +155,7 @@ export default function Contact() {
           href="https://github.com/Turei-hub"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Turei Milner on GitHub (opens in new tab)"
           className="flex items-center gap-2 text-slate-400 hover:text-slate-100 transition-colors"
         >
           <GitHubIcon />
@@ -164,6 +165,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/turei-milner-2682b5361/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Turei Milner on LinkedIn (opens in new tab)"
           className="flex items-center gap-2 text-slate-400 hover:text-slate-100 transition-colors"
         >
           <LinkedInIcon />

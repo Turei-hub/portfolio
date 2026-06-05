@@ -58,6 +58,8 @@ function AccordionItem({ lo, isOpen, onToggle }) {
       {/* Header button */}
       <button
         onClick={onToggle}
+        aria-expanded={isOpen}
+        aria-controls={`lo-body-${lo.id}`}
         className="w-full flex items-start sm:items-center justify-between gap-4 px-6 py-5 text-left bg-slate-800 hover:bg-slate-700/50 transition-colors duration-150"
       >
         <div className="flex items-start sm:items-center gap-4">
@@ -81,7 +83,7 @@ function AccordionItem({ lo, isOpen, onToggle }) {
 
       {/* Body */}
       {isOpen && (
-        <div className="bg-slate-900 border-t border-slate-700 px-6 py-6">
+        <div id={`lo-body-${lo.id}`} className="bg-slate-900 border-t border-slate-700 px-6 py-6">
           <p className="text-slate-400 text-sm leading-relaxed mb-6">{lo.detail}</p>
 
           <div>

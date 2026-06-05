@@ -97,6 +97,7 @@ function ProjectCard({ project, index }) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`View ${project.name} on GitHub`}
             className="flex-1 text-center py-2 border border-slate-600 hover:border-emerald-400 text-slate-400 hover:text-emerald-400 text-sm rounded-lg transition-colors duration-150"
           >
             GitHub
@@ -105,6 +106,9 @@ function ProjectCard({ project, index }) {
           {project.live && (
             <a
               href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.name} live site`}
               className="flex-1 text-center py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm rounded-lg transition-colors duration-150"
             >
               Live ↗
