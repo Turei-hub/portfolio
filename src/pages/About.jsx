@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
 
 const skills = [
@@ -25,9 +26,16 @@ const timeline = [
     description:
       'Shipped four production projects — Racket Up (internship, live at racketup.co.nz), Zina App (AI road trip planner for Z Energy), 2 Little Leashes (full client platform, live in Rotorua), and Jerrican Trust (community web platform). Real clients, real deadlines, real code. I\'m most proud of building things that people actually use.',
   },
+  {
+    period: '2026',
+    title: 'What\'s Next',
+    description:
+      'Completing the Level 5 Diploma at Mission Ready HQ and actively looking for my first full-time role in tech. Building toward a career where technical skill meets cultural purpose — tools that serve Māori communities, veterans, and the people around me. Open to work, open to conversation.',
+  },
 ]
 
 export default function About() {
+  useEffect(() => { document.title = 'About — Turei Milner' }, [])
   const bio        = useScrollReveal()
   const skillsEl   = useScrollReveal()
   const timelineEl = useScrollReveal()

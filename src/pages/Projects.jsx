@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
 
 const projects = [
@@ -121,6 +121,7 @@ function ProjectCard({ project, index }) {
 }
 
 export default function Projects() {
+  useEffect(() => { document.title = 'Projects — Turei Milner' }, [])
   const [activeFilter, setActiveFilter] = useState('All')
   const header = useScrollReveal()
   const filters = useScrollReveal()

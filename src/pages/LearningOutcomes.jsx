@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
 
 const outcomes = [
@@ -108,6 +108,7 @@ function AccordionItem({ lo, isOpen, onToggle }) {
 }
 
 export default function LearningOutcomes() {
+  useEffect(() => { document.title = 'Learning Outcomes — Turei Milner' }, [])
   const [openId, setOpenId] = useState('LO1')
   const header  = useScrollReveal()
   const legend  = useScrollReveal()

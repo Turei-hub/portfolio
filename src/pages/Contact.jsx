@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import useScrollReveal from '../hooks/useScrollReveal'
 
 function GitHubIcon() {
@@ -25,6 +25,7 @@ const inputClass =
   'w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors duration-150'
 
 export default function Contact() {
+  useEffect(() => { document.title = 'Contact — Turei Milner' }, [])
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)

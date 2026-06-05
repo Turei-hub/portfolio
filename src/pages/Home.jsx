@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import useScrollReveal from '../hooks/useScrollReveal'
 
@@ -7,6 +8,7 @@ const stackBadges = [
 ]
 
 export default function Home() {
+  useEffect(() => { document.title = 'Turei Milner — Full Stack Developer | Auckland, NZ' }, [])
   const hero = useScrollReveal()
   return (
     <section
