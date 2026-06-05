@@ -27,6 +27,16 @@ const timeline = [
 
 export default function About() {
   return (
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: 'url(/about.bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+    >
+      <div className="min-h-screen bg-[#0b1a17]/80">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       {/* Bio + photo */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch mb-20">
@@ -100,6 +110,8 @@ export default function About() {
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   )
 }
