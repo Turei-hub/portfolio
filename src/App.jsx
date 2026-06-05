@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-100">
         <Navbar />
-        <div className="overflow-hidden bg-black py-2 border-y border-[#39ff14]/30">
+        <div className="sticky top-20 z-40 overflow-hidden bg-black py-2 border-y border-[#39ff14]/30">
           <div className="flex animate-marquee-scroll whitespace-nowrap">
             {[0, 1, 2, 3].map(i => (
               <span key={i} className="text-sm font-bold tracking-widest shrink-0 pr-24" style={{ color: '#39ff14', textShadow: '0 0 8px #39ff14, 0 0 20px #39ff14' }}>
