@@ -79,7 +79,7 @@ export default function About() {
 
         <div className="rounded-xl overflow-hidden min-h-80">
           <img
-            src="/tootstech.jpg"
+            src="/og-image.jpg"
             alt="Turei Milner"
             className="w-full h-full object-cover object-top"
           />
