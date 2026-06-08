@@ -51,6 +51,7 @@ const projects = [
     description:
       'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints. Built with Supabase auth and Stripe payments.',
     color: 'from-purple-800 to-purple-900',
+    image: '/cultural-ai-muse.png',
     tags: ['React', 'Vite', 'Supabase', 'Stripe'],
     github: 'https://github.com/Turei-hub/cultural-ai-muse',
     live: 'https://cultural-ai-muse.vercel.app',
@@ -61,6 +62,7 @@ const projects = [
     description:
       'Official website for Kaupeka Tech — a NZ web and SaaS studio. Designed and built the brand from the ground up, showcasing services and work.',
     color: 'from-cyan-800 to-cyan-900',
+    image: '/kaupeka-tech.png',
     tags: ['React', 'Vite', 'Tailwind CSS'],
     github: 'https://github.com/Turei-hub/kaupeka-tech',
     live: 'https://kaupeka-tech.vercel.app',
