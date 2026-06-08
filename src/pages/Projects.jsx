@@ -5,26 +5,6 @@ import useMeta from '../hooks/useMeta'
 const projects = [
   {
     id: 1,
-    name: 'Racket Up',
-    description:
-      'Real client, real deadline. Built a full court booking and player management platform for a tennis academy during my Final Mission internship — shipped with a live product team.',
-    color: 'from-emerald-800 to-emerald-900',
-    image: '/RacketUp.png',
-    tags: ['React', 'Node.js', 'Express', 'MySQL'],
-    live: 'https://racketup.co.nz/',
-  },
-  {
-    id: 2,
-    name: 'Zina App',
-    description:
-      'Built for Z Energy — users describe a road trip and the app generates personalised routes using Gemini AI and Google Maps. Delivered as a team at Show & Tell.',
-    color: 'from-emerald-800 to-emerald-900',
-    image: '/Zina.app.png',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
-    github: 'https://github.com/Turei-hub/zina-app',
-  },
-  {
-    id: 3,
     name: '2 Little Leashes',
     description:
       'A real client needed a professional online presence — fast. Built a full booking system, admin dashboard, and photo approval workflow. Live and taking bookings in Rotorua.',
@@ -35,7 +15,7 @@ const projects = [
     live: 'https://www.2littleleashes.co.nz',
   },
   {
-    id: 4,
+    id: 2,
     name: 'Jerrican Trust',
     description:
       'Designed and built a web platform for a community trust — giving them a professional digital home to share their mission and connect with supporters.',
@@ -46,7 +26,7 @@ const projects = [
     live: 'https://jerrican-trust.vercel.app/',
   },
   {
-    id: 5,
+    id: 3,
     name: 'Cultural AI Muse',
     description:
       'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints. Built with Supabase auth and Stripe payments.',
@@ -66,6 +46,26 @@ const projects = [
     tags: ['React', 'Vite', 'Tailwind CSS'],
     github: 'https://github.com/Turei-hub/kaupeka-tech',
     live: 'https://kaupeka-tech.vercel.app',
+  },
+  {
+    id: 5,
+    name: 'Racket Up',
+    description:
+      'Real client, real deadline. Built a full court booking and player management platform for a tennis academy during my Final Mission internship — shipped with a live product team.',
+    color: 'from-emerald-800 to-emerald-900',
+    image: '/RacketUp.png',
+    tags: ['React', 'Node.js', 'Express', 'MySQL'],
+    live: 'https://racketup.co.nz/',
+  },
+  {
+    id: 6,
+    name: 'Zina App',
+    description:
+      'Built for Z Energy — users describe a road trip and the app generates personalised routes using Gemini AI and Google Maps. Delivered as a team at Show & Tell.',
+    color: 'from-emerald-800 to-emerald-900',
+    image: '/Zina.app.png',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
+    github: 'https://github.com/Turei-hub/zina-app',
   },
 ]
 
