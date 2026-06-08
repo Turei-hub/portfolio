@@ -8,7 +8,7 @@ const outcomes = [
     title: 'Full Stack Technical Capability',
     summary: 'Design and build a complete web application from front end to back end.',
     detail:
-      'Across three production projects I designed and shipped complete full-stack applications. For 2 Little Leashes I built the entire platform solo — a Next.js frontend, Node.js/Express API, and Supabase (PostgreSQL) database, deployed to Vercel with dual transactional email notifications and a photo approval workflow. For Racket Up I built REST API endpoints with Express and Sequelize on a MySQL database, integrating with a React frontend built alongside a product team. For Zina App I owned the ChatPage and BriefFormPage, integrated the Gemini AI API and Google Maps API, and connected the voice input feature end-to-end. In each case I handled data modelling, API design, state management, and deployment — not just isolated components.',
+      'Across three production projects I designed and shipped complete full-stack applications. For 2 Little Leashes I built the entire platform solo — a React + Vite frontend, Node.js/Express API, and Supabase (PostgreSQL) database, deployed to Vercel with dual transactional email notifications and a photo approval workflow. For Racket Up I built REST API endpoints with Express and Sequelize on a MySQL database, integrating with a React frontend built alongside a product team. For Zina App I owned the ChatPage and BriefFormPage, integrated the Gemini AI API and Google Maps API, and connected the voice input feature end-to-end. In each case I handled data modelling, API design, state management, and deployment — not just isolated components.',
     projects: ['Racket Up', 'Zina App', '2 Little Leashes'],
   },
   {
