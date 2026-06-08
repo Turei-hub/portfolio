@@ -45,10 +45,30 @@ const projects = [
     github: 'https://github.com/Turei-hub/jerrican-trust',
     live: 'https://jerrican-trust.vercel.app/',
   },
+  {
+    id: 5,
+    name: 'Cultural AI Muse',
+    description:
+      'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints. Built with Supabase auth and Stripe payments.',
+    color: 'from-purple-800 to-purple-900',
+    tags: ['React', 'Vite', 'Supabase', 'Stripe'],
+    github: 'https://github.com/Turei-hub/cultural-ai-muse',
+    live: 'https://cultural-ai-muse.vercel.app',
+  },
+  {
+    id: 6,
+    name: 'Kaupeka Tech',
+    description:
+      'Official website for Kaupeka Tech — a NZ web and SaaS studio. Designed and built the brand from the ground up, showcasing services and work.',
+    color: 'from-cyan-800 to-cyan-900',
+    tags: ['React', 'Vite', 'Tailwind CSS'],
+    github: 'https://github.com/Turei-hub/kaupeka-tech',
+    live: 'https://kaupeka-tech.vercel.app',
+  },
 ]
 
 
-const allTags = ['All', 'React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'AI']
+const allTags = ['All', 'React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'MySQL', 'Supabase', 'Stripe', 'AI']
 
 function ProjectCard({ project, index }) {
   const { ref, visible } = useScrollReveal()
