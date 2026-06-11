@@ -60,7 +60,7 @@ export default function About() {
         backgroundAttachment: 'fixed',
       }}
     >
-      <div className="min-h-screen bg-[#0b1a17]/80">
+      <div className="min-h-screen bg-[#0b1a17]/90">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       {/* Bio + photo */}
       <div ref={bio.ref} className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch mb-20 transition-all duration-700 ${bio.visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>

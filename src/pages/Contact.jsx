@@ -66,7 +66,7 @@ export default function Contact() {
         backgroundAttachment: 'fixed',
       }}
     >
-      <div className="min-h-screen bg-[#0b1a17]/80">
+      <div className="min-h-screen bg-[#0b1a17]/90">
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}

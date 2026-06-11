@@ -7,7 +7,8 @@ const projects = [
     id: 1,
     name: '2 Little Leashes',
     description:
-      'A real client needed a professional online presence — fast. Built a full booking system, admin dashboard, and photo approval workflow. Live and taking bookings in Rotorua.',
+      'A real client needed a professional online presence — fast. Built a full booking system, admin dashboard, and photo approval workflow.',
+    outcome: 'Built solo in 3 weeks — live and taking bookings in Rotorua.',
     color: 'from-amber-800 to-amber-900',
     image: '/2littleleashes.png',
     tags: ['React', 'Vite', 'Node.js', 'Supabase'],
@@ -18,7 +19,8 @@ const projects = [
     id: 2,
     name: 'Jerrican Trust',
     description:
-      'Designed and built a web platform for a community trust — giving them a professional digital home to share their mission and connect with supporters.',
+      'Designed and built a web platform for a NZ veteran community trust — giving them a professional digital home to share their mission and connect with supporters.',
+    outcome: 'Delivered end-to-end solo, contact form wired to branded email notifications.',
     color: 'from-rose-800 to-rose-900',
     image: '/Jerrican Trust.png',
     tags: ['React', 'Node.js'],
@@ -29,7 +31,8 @@ const projects = [
     id: 3,
     name: 'Cultural AI Muse',
     description:
-      'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints. Built with Supabase auth and Stripe payments.',
+      'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints.',
+    outcome: 'Full auth + Stripe payments integrated — end-to-end e-commerce flow.',
     color: 'from-purple-800 to-purple-900',
     image: '/cultural-ai-muse.png',
     tags: ['React', 'Vite', 'Supabase', 'Stripe'],
@@ -37,10 +40,11 @@ const projects = [
     live: 'https://cultural-ai-muse.vercel.app',
   },
   {
-    id: 6,
+    id: 4,
     name: 'Kaupeka Tech',
     description:
       'Official website for Kaupeka Tech — a NZ web and SaaS studio. Designed and built the brand from the ground up, showcasing services and work.',
+    outcome: 'Brand designed and shipped from scratch — live and indexed on Google.',
     color: 'from-cyan-800 to-cyan-900',
     image: '/kaupeka-tech.png',
     tags: ['React', 'Vite', 'Tailwind CSS'],
@@ -51,7 +55,8 @@ const projects = [
     id: 5,
     name: 'Racket Up',
     description:
-      'Real client, real deadline. Built a full court booking and player management platform for a tennis academy during my Final Mission internship — shipped with a live product team.',
+      'Real client, real deadline. Built a full court booking and player management platform for a tennis academy during my Final Mission internship.',
+    outcome: 'Shipped with a 4-person product team — live at racketup.co.nz.',
     color: 'from-emerald-800 to-emerald-900',
     image: '/RacketUp.png',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
@@ -61,7 +66,8 @@ const projects = [
     id: 6,
     name: 'Zina App',
     description:
-      'Built for Z Energy — users describe a road trip and the app generates personalised routes using Gemini AI and Google Maps. Delivered as a team at Show & Tell.',
+      'Built for Z Energy — users describe a road trip and the app generates personalised routes using Gemini AI and Google Maps.',
+    outcome: '28 Jest tests written. Presented live to Z Energy stakeholders at Show & Tell.',
     color: 'from-emerald-800 to-emerald-900',
     image: '/Zina.app.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'AI'],
@@ -97,9 +103,15 @@ function ProjectCard({ project, index }) {
 
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-lg font-bold text-slate-100 mb-2">{project.name}</h3>
-        <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">
+        <p className="text-slate-400 text-sm leading-relaxed mb-3 flex-1">
           {project.description}
         </p>
+        {project.outcome && (
+          <p className="text-emerald-400 text-xs font-medium mb-4 flex items-start gap-1.5">
+            <span className="mt-0.5 shrink-0">↗</span>
+            {project.outcome}
+          </p>
+        )}
 
         {/* Tech tags */}
         <div className="flex flex-wrap gap-1.5 mb-5">
@@ -168,7 +180,7 @@ export default function Projects() {
         backgroundAttachment: 'fixed',
       }}
     >
-      <div className="min-h-screen bg-[#0b1a17]/80">
+      <div className="min-h-screen bg-[#0b1a17]/90">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
 
       {/* Header */}
