@@ -9,13 +9,6 @@ const stackBadges = [
 
 const featuredProjects = [
   {
-    name: 'Racket Up',
-    description: 'Court booking and player management platform built for a real tennis academy during my Final Mission internship.',
-    tags: ['React', 'Node.js', 'MySQL'],
-    live: 'https://racketup.co.nz/',
-    image: '/RacketUp.png',
-  },
-  {
     name: '2 Little Leashes',
     description: 'Full booking system, admin dashboard, and photo approval workflow for a dog walking client in Rotorua.',
     tags: ['React', 'Supabase', 'Node.js'],
@@ -24,11 +17,20 @@ const featuredProjects = [
     image: '/2littleleashes.png',
   },
   {
-    name: 'Zina App',
-    description: 'AI-powered road trip planner built for Z Energy — describe your trip, get personalised routes via Gemini and Google Maps.',
-    tags: ['React', 'Express', 'MongoDB', 'AI'],
-    github: 'https://github.com/Turei-hub/zina-app',
-    image: '/Zina.app.png',
+    name: 'Jerrican Trust',
+    description: 'Web platform for a NZ veteran community trust — giving them a professional digital home to share their mission and connect with supporters.',
+    tags: ['React', 'Node.js'],
+    live: 'https://jerrican-trust.vercel.app/',
+    github: 'https://github.com/Turei-hub/jerrican-trust',
+    image: '/Jerrican Trust.png',
+  },
+  {
+    name: 'Kaupeka Tech',
+    description: 'Official website for Kaupeka Tech — a NZ web and SaaS studio. Designed and built the brand from the ground up.',
+    tags: ['React', 'Vite', 'Tailwind CSS'],
+    live: 'https://kaupeka-tech.vercel.app',
+    github: 'https://github.com/Turei-hub/kaupeka-tech',
+    image: '/kaupeka-tech.png',
   },
 ]
 
