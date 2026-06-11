@@ -112,7 +112,8 @@ JERRICAN TRUST
 - Sticky neon green (#39ff14) marquee banner below navbar — continuous loop, 4 copies, translateX(-25%)
   Slogan included: "From the Bush to the Browser"
 - Scroll reveal animations on all 5 pages using src/hooks/useScrollReveal.js (IntersectionObserver)
-- Hero CTA: "Hire Me" is primary button (emerald glow pulse), "View My Work" is secondary
+- Hero CTA: "Hire Me" is primary button (emerald glow pulse), "View My Work" is secondary (emerald border),
+  "Download CV ↓" is tertiary (slate border) — all three in a row on desktop
 - Active nav link: emerald underline on desktop, left border on mobile
 - vercel.json rewrite rule added — fixes 404 on direct URL / page refresh
 - Favicon: SVG with TM initials, neon green (#39ff14) with glow, dark background (public/favicon.svg)
@@ -121,6 +122,18 @@ JERRICAN TRUST
 - Image optimisation via vite-plugin-image-optimizer (68% reduction, runs on every build)
 - Accessibility: skip-to-content link, aria-labels on all interactive elements,
   aria-expanded on LO accordion, marquee marked aria-hidden
+
+## Mentor feedback improvements (June 2026)
+- Interior page overlays bumped from bg-[#0b1a17]/80 → /90 on About, Contact, LO, Projects
+  for better text readability against background images
+- Homepage now has content below hero fold:
+  - "Featured Projects" section — 3 cards (2 Little Leashes, Jerrican Trust, Kaupeka Tech)
+    with a "View all →" link to /projects
+  - "From the Bush to the Browser" about teaser — story blurb + 2x2 stats grid
+    (4+ Live Projects, 3 Real Clients, Full Stack, NZ Based)
+- All 6 project cards on /projects have an outcome/impact line (emerald ↗ prefix)
+- Footer updated: GitHub + LinkedIn icons sitewide, plus CV ↓ download link
+- CV download: public/Turei_Milner_CV.pdf — linked from hero CTA and footer
 
 ## Mission Ready journey (for timeline accuracy)
 - Level 3 — 10 weeks, Tech Career Launchpad
