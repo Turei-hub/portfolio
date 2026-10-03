@@ -49,7 +49,7 @@ const projects = [
     image: '/kaupeka-tech.png',
     tags: ['React', 'Vite', 'Tailwind CSS'],
     github: 'https://github.com/Turei-hub/kaupeka-tech',
-    live: 'https://kaupeka-tech.vercel.app',
+    live: 'https://www.kaupekadigital.com/',
   },
   {
     id: 5,

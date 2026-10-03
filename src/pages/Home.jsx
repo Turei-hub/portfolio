@@ -28,7 +28,7 @@ const featuredProjects = [
     name: 'Kaupeka Tech',
     description: 'Official website for Kaupeka Tech — a NZ web and SaaS studio. Designed and built the brand from the ground up.',
     tags: ['React', 'Vite', 'Tailwind CSS'],
-    live: 'https://kaupeka-tech.vercel.app',
+    live: 'https://www.kaupekadigital.com/',
     github: 'https://github.com/Turei-hub/kaupeka-tech',
     image: '/kaupeka-tech.png',
   },
