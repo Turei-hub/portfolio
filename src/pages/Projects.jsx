@@ -27,18 +27,7 @@ const projects = [
     github: 'https://github.com/Turei-hub/jerrican-trust',
     live: 'https://jerrican-trust.vercel.app/',
   },
-  {
-    id: 3,
-    name: 'Cultural AI Muse',
-    description:
-      'A Māori AI art brand platform — users generate culturally grounded AI artwork, browse a gallery, and purchase prints.',
-    outcome: 'Full auth + Stripe payments integrated — end-to-end e-commerce flow.',
-    color: 'from-purple-800 to-purple-900',
-    image: '/cultural-ai-muse.png',
-    tags: ['React', 'Vite', 'Supabase', 'Stripe'],
-    github: 'https://github.com/Turei-hub/cultural-ai-muse',
-    live: 'https://cultural-ai-muse.vercel.app',
-  },
+
   {
     id: 4,
     name: 'Kaupeka Tech',
